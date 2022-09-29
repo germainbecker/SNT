@@ -249,6 +249,8 @@ def haut(n=1):
     Déplace l'alien de n cases vers le haut.
     Si n est négatif, le déplacement se fait de -n cases vers le bas.
     """
+    if not isinstance(n, int):
+        raise TypeError("Le paramètre de la fonction haut doit être un nombre entier.")
     # numéro de ligne appelant la fonction
     ligne = currentframe().f_back.f_lineno
     # mise à jour de la position actuelle
@@ -266,6 +268,8 @@ def bas(n=1):
     Déplace l'alien de n cases vers le bas.
     Si n est négatif, le déplacement se fait de -n cases vers le haut.
     """
+    if not isinstance(n, int):
+        raise TypeError("Le paramètre de la fonction bas doit être un nombre entier.")
     ligne = currentframe().f_back.f_lineno
     alien['pos'] = {
         'x': alien['pos']['x'],
@@ -280,6 +284,8 @@ def gauche(n=1):
     Déplace l'alien de n cases vers la gauche.
     Si n est négatif, le déplacement se fait de -n cases vers la droite.
     """
+    if not isinstance(n, int):
+        raise TypeError("Le paramètre de la fonction gauche doit être un nombre entier.")
     ligne = currentframe().f_back.f_lineno
     alien['pos'] = {
         'x': alien['pos']['x'] - n,
@@ -294,6 +300,8 @@ def droite(n=1):
     Déplace l'alien de n cases vers la droite.
     Si n est négatif, le déplacement se fait de -n cases vers la gauche.
     """
+    if not isinstance(n, int):
+        raise TypeError("Le paramètre de la fonction droite doit être un nombre entier.")
     ligne = currentframe().f_back.f_lineno
     alien['pos'] = {
         'x': alien['pos']['x'] + n,
