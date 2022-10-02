@@ -1069,8 +1069,8 @@ def preload():
     La fonction run() doit alors préciser d'exécuter la fonction preload().
     """
     global image_alien, image_alien2
-    image_alien = loadImage('https://capytale2.ac-paris.fr/web/sites/default/files/2022/06-25/16-32-23/alien.svg')
-    image_alien2 = loadImage('https://capytale2.ac-paris.fr/web/sites/default/files/2022/06-26/17-22-02/alien2.svg')
+    image_alien = loadImage('https://raw.githubusercontent.com/germainbecker/SNT/master/Capytale/Python/alien_python/alien.svg')
+    image_alien2 = loadImage('https://raw.githubusercontent.com/germainbecker/SNT/master/Capytale/Python/alien_python/alien2.svg')
     
 def setup():
     """
